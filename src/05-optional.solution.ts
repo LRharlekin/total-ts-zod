@@ -8,6 +8,21 @@ const Form = z.object({
   phoneNumber: z.string().optional(),
 });
 
+/* 
+// ~~~ Alternative Solution ~~~
+const Form = z
+  .object({
+    name: z.string(),
+    phoneNumber: z.string(),
+    //                     ^ 🕵️‍♂️
+  })
+  .partial({
+    phoneNumber: true,
+  });
+ */
+
+// type FormType = z.infer<typeof Form>;
+
 export const validateFormInput = (values: unknown) => {
   const parsedData = Form.parse(values);
 
@@ -20,14 +35,14 @@ it("Should validate correct inputs", async () => {
   expect(() =>
     validateFormInput({
       name: "Matt",
-    }),
+    })
   ).not.toThrow();
 
   expect(() =>
     validateFormInput({
       name: "Matt",
       phoneNumber: "123",
-    }),
+    })
   ).not.toThrow();
 });
 

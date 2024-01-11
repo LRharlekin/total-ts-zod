@@ -27,5 +27,5 @@ type cases = [
   Expect<
     Equal<z.infer<typeof Post>, { id: string; title: string; body: string }>
   >,
-  Expect<Equal<z.infer<typeof User>, { id: string; name: string }>>,
+  Expect<Equal<z.infer<typeof User>, { id: string; name: string }>>
 ];
