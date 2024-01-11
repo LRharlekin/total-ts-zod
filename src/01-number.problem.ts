@@ -12,7 +12,7 @@ export const toString = (num: unknown) => {
 
 it("Should throw a runtime error when called with not a number", () => {
   expect(() => toString("123")).toThrowError(
-    "Expected number, received string",
+    "Expected number, received string"
   );
 });
 
