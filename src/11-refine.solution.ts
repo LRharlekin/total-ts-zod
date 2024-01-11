@@ -13,9 +13,10 @@ const Form = z
       return confirmPassword === password;
     },
     {
+      // PATH IS OPTIONAL
       path: ["confirmPassword"],
       message: "Passwords don't match",
-    },
+    }
   );
 
 export const validateFormInput = (values: unknown) => {
@@ -31,6 +32,6 @@ it("Should error if the passwords are not the same", () => {
     validateFormInput({
       password: "password",
       confirmPassword: "password1",
-    }),
+    })
   ).toThrowError("Passwords don't match");
 });
