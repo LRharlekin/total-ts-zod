@@ -1,8 +1,4 @@
-# Zod Tutorial
-
-<a href="https://totaltypescript.com/tutorials/zod"><img src="https://res.cloudinary.com/total-typescript/image/upload/v1662635438/zod-tutorial/card_2x_ywsvl1.png" alt="zod tutorial" /></a>
-
-This Zod tutorial will give you everything you ever needed to know about [Zod](https://github.com/colinhacks/zod) - an amazing library for building type-safe AND runtime-safe applications.
+# Get started
 
 ```sh
 # Installs all dependencies
@@ -21,7 +17,7 @@ To take an exercise:
 1. Run `npm run exercise`
 2. Choose which exercise you'd like to run.
 
-This course encourages **active, exploratory learning**. In the video, I'll explain a problem, and **you'll be asked to try to find a solution**. To attempt a solution, you'll need to:
+This course encourages **active, exploratory learning**. To attempt a solution, you'll need to:
 
 1. Check out [Zod's docs](https://zod.dev/).
 1. Try to find something that looks relevant.
@@ -29,11 +25,7 @@ This course encourages **active, exploratory learning**. In the video, I'll expl
 
 You'll know if you've succeeded because the tests will pass.
 
-**If you succeed**, or **if you get stuck**, unpause the video and check out the `*.solution`. You can see if your solution is better or worse than mine!
-
-## Acknowledgements
-
-Say thanks to Matt on [Twitter](https://twitter.com/mattpocockuk) or by joining his [Discord](https://discord.gg/8S5ujhfTB3). Consider signing up to his [Total TypeScript course](https://totaltypescript.com).
+**If you succeed**, or **if you get stuck**, check out the `*.solution`.
 
 ## Reference
 
@@ -41,4 +33,4 @@ Say thanks to Matt on [Twitter](https://twitter.com/mattpocockuk) or by joining 
 
 Alias: `npm run e`
 
-Open a prompt for choosing which exercise you'd like to run.
+Opens a prompt for choosing which exercise you'd like to run.
