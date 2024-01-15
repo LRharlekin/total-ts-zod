@@ -8,6 +8,15 @@ const Form = z.object({
   confirmPassword: z.string(),
 });
 /* 
+
+// REFINE SYNTAX
+// .refine(validator: (data:T) => any, params?: RefineParams)
+// !!! Refinement functions should NOT THROW! Instead they should return a falsy value to signal failure.
+// .refine() takes 2 arguments
+// 1. Validator function: takes 1 input of type T (the inferred type of the schema). 
+// 2. The second argument accepts options, to be used to customize certain error-handling behavior.
+
+
   .refine(
     (data) => {
       return data.password === data.confirmPassword;

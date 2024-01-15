@@ -10,6 +10,12 @@ const MenuItem = z.object({
   children: z.array(MenuItem).default([]),
 });
 
+// Problem framing and steps
+// 1. MenuItem schema cannot access MenuItem recursively, before initialization
+// 2. If we want to recursively define schema, we need to define a type first >> initialize an interface MenuItemType with optional property children?: MenuItemType[]
+// 3. Infer type of schema MenuItem from type with z.ZodType
+// 4. wrap schema definition inside z.lazy() to allow for recursivity defining children
+
 // TESTS
 
 it("Should succeed when it encounters a correct structure", async () => {
